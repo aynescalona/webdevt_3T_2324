@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="sugarLevel">Sugar Level</label>
+        <select name="sugarLevel" id="sugarLevel">
+            <option value="30">30%</option>
+            <option value="50">50%</option>
+            <option value="70">70%</option>
+            <option value="80">80%</option>
+            <option value="100">100%</option>
+        </select>
+        <br>
+        <label for="destination">Destination</label>
+        <select name="destination" id="destination">
+            <optgroup label="MRT-3">
+                <option value="Taft Avenue">Taft Avenue</option>
+                <option value="Magallanes">Magallanes</option>
+                <option value="Ayala">Ayala</option>
+            </optgroup>
+            <optgroup label="LRT-1">
+                <option>Taft Avenue</option>
+                <option>EDSA</option>
+                <option>Libertad</option>
+                <option>Vito Cruz</option>
+                <option>Gil Puyat</option>
+            </optgroup>
+            <optgroup label="LRT-2">
+                <option>Cubao</option>
+                <option>Anonas</option>
+                <option>Katipunan</option>
+            </optgroup>
+            </select>
+
+        <br>
+
+        <label for="restaurant">Where to eat?</label>
+        <input type="text" name="restaurant" id="restaurant" list="taft">
+        <datalist id="taft">
+            <option>24Chicken</option>
+            <option>Chicken Chicken</option>
+            <option>Eat Fresh</option>
+            <option>Agno</option>
+            <option>Zus</option>
+
+        </datalist>
+    </form>
+</body>
+</html>
